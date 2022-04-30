@@ -1,0 +1,9 @@
+
+Text = input("Enter a string: ")
+f = open("quotes.txt", "a")
+f.write(Text)
+f.close()
+
+#open and read the file after the appending:
+f = open("quotes.txt", "r")
+print(f.read())
